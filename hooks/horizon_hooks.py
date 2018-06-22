@@ -152,6 +152,7 @@ def config_changed():
     save_script_rc(**env_vars)
     update_nrpe_config()
     CONFIGS.write_all()
+    check_custom_theme()
     open_port(80)
     open_port(443)
 
